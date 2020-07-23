@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-6-9</title>
+</head>
+
+<body>
+
+    <h1>Math Expression</h1>
+    
+    <script>
+        a = 10;
+
+        document.write("Result" + "<br>" + "The value of a is : " + String(a))
+        document.write("<br>")
+
+
+        document.write(".......................................................");
+
+
+
+        document.write("<br>")
+        document.write("<br>")
+        ++a
+        document.write("The Value of a++ is " + " " + String(a));
+
+
+        document.write("<br>")
+        document.write("<br>")
+        a++
+        document.write("The Value of a++ is " + " " + String(a));
+
+
+        document.write("<br>")
+        document.write("<br>")
+        --a
+        document.write("The Value of --a is " + " " + String(a));
+
+
+        document.write("<br>")
+        document.write("<br>")
+        a--
+        document.write("The Value of a-- is " + " " + String(a));
+
+    </script>
+    <b>
+        <p>Q2</p>
+    </b>
+
+    <b>
+        <p>Explain the output at each stage:</p>
+    </b>
+    <ul>
+        <li> var a = 2, b = 1;</li>
+        <li>var result = --a - --b + ++b + b--;</li>
+
+
+
+        <li>--a;
+            <pre>The Value of a is 2, and the condition is --a before pre decrement so value will be 1
+</pre>
+        </li>
+        <li> --a - --b;
+            <pre>The Value of a is 2, and the condition is --a before pre decrement so value will be 1 then b ia 1 it is also pre decrement so value will be 0.<br>
+                    After getting 1 and 0  so both will be subtract 1 - 0 = 1. Answer will be 1
+</pre>
+        </li>
+        <li>--a - --b + ++b;
+            <pre>The Value of a is 2, and the condition is --a before pre decrement so value will be 1 then b ia 1 it is also pre decrement so value will be 0.<br>
+                    After getting 1 and 0  so both will be subtract 1 - 0 = 1 then ++b the value of b will be 2 then 1 will be add with 2 so answer will be 3.
+</pre>
+        </li>
+        <li>--a - --b + ++b + b--;
+
+            <pre>The Value of a is 2, and the condition is --a before pre decrement so value will be 1 then b ia 1 it is also pre decrement so value will be 0.<br>
+                    After getting 1 and 0  so both will be subtract 1 - 0 = 1 then ++b the value of b will be 2 then 1 will be add with 2 so answer will be 3 Now post decrement in b
+                         Now b will be 0 so 3 will be add with 0 <b>Answer will be 3</b>
+</pre>
+        </li>
+
+
+
+    </ul>
+
+
+    <b>
+        <p>Q3 </p>
+    </b>
+
+    <script>
+        var user = prompt("Enter Your name :")
+
+        document.write("Welcome to  " + user)
+    </script>
+
+
+
+    <b>
+        <p>Q5 :</p>
+    </b>
+
+    <script>
+
+        var input = prompt("Enter Number");
+        if(input == "") 
+        {
+            document.write("Print 5 Table");
+        }
+        else
+        {
+            for(var i=1; i<=10; i++)
+            {
+                document.write(input + "*" + i + "=" + input * i + "<br> <br>");
+            }
+        }
+
+
+
+
+    </script>
+
+
+    <b>
+        <p>Q6:</p>
+        <h1>MArkSheet</h1>
+    </b>
+
+
+
+
+    <script>
+        var Sub1 = prompt("Enter your Subject 1")
+
+        var mark1 = +prompt("Enter your sub1 marks out of 100")
+
+
+
+        var Sub2 = prompt("Enter your Subject 2")
+        var mark2 = +prompt("Enter your sub2 marks out of 100")
+       
+
+
+
+
+        var Sub3 = prompt("Enter your Subject 3")
+        var mark3 = +prompt("Enter your sub3 1marks out of 100")
+       
+
+        var Tmarks = 300;
+       
+        var marks = mark1 + mark2 + mark3;
+        document.write("Obtained Marks is : " + String(marks))
+
+
+
+        var per = (marks / Tmarks) * 100
+
+
+
+
+
+
+
+    </script>
+
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+
+        </tr>
+
+        <tr>
+            <td>English</td>
+            <td>100</td>
+            <td>
+                <script>
+                    document.write(String(Sub1) + "  marks is  " + String(mark1));
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write("Percentage is " + String(mark1 / 100) * 100 + " %");
+                </script>
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>physics</td>
+            <td>100</td>
+            <td>
+                <script>
+                    document.write(String(Sub2) + "  marks is  " + String(mark2));
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write("Percentage is " + String(mark2 / 100) * 100 + " %");
+                </script>
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>chem</td>
+            <td>100</td>
+            <td>
+                <script>
+                    document.write(String(Sub3) + "  marks is  " + String(mark3));
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write("Percentage is " + String(mark3 / 100) * 100 + " %");
+                </script>
+
+            </td>
+
+        </tr>
+
+        <br>
+        <tr>
+            <td></td>
+            <th>
+                <script>
+                    document.write(String(Tmarks))
+
+                </script>
+            </th>
+
+            <th>
+
+                <script>
+                    document.write(String(marks))
+                </script>
+            </th>
+            <th>
+                <script>
+                    document.write(String(per) + "%")
+                </script>
+
+            </th>
+
+        </tr>
+
+
+    </table>
+
+
+</body>
+
+</html>

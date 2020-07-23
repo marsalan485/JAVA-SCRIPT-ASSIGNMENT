@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-49-52</title>
+    <script src="chap 49-52.js"></script>
+
+</head>
+<body>
+    
+
+    <!-- Q1 -->
+<div id="form1" class="hello">
+<form action="javascript:void(0);"  onsubmit=" form() ">
+        <table>
+<tr><td>
+    Name 
+</td>
+<td>
+    <input type="text" id="name" onfocus="this.style.backgroundColor = '#ffff' ">
+</td>
+</tr>
+
+<tr>
+    <td>
+        Qualification
+    </td>
+    <td>
+        <input type="text" id="qualification" onfocus="this.style.backgroundColor = '#ffff'">
+    </td>
+</tr>
+
+<tr>
+    <td>Mobile Number</td>
+    <td>
+    <input type="number" id="mobile" onfocus="this.style.backgroundColor = '#ffff'">
+    </td>
+</tr>
+
+<tr>
+    <td>
+        Email
+    </td>
+    <td>
+        <input type="text" id="email" onfocus="this.style.backgroundColor = '#ffff'">
+    </td>
+</tr>
+
+<tr>
+    <td> 
+        Address
+    </td>
+    <td>
+        <input type="text" id="address" onfocus="this.style.backgroundColor = '#ffff'">
+
+    </td>
+</tr>
+
+<tr>
+    <td>
+<input type="submit" value="Submit">
+    </td>
+</tr>
+        </table> 
+
+</form>
+
+</div>
+
+<div id="thanks"></div>
+<div id= "tableDiv" class="hidden" >
+    <table>
+        <tr><td>
+            Name 
+        </td>
+        <td >
+            <p id ="nameNew"> </p>
+            
+        </td>
+        </tr>
+
+        <tr>
+            <td>
+                Qualification
+            </td>
+            <td >
+                <p id="qualificationNew"></p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Mobile Number</td>
+            <td >
+                <p id="mobileNew"></p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                Email
+            </td>
+            <td id="emailNew">
+            </td>
+        </tr>
+
+        <tr>
+            <td> 
+                Address
+            </td>
+            <td >
+        <p id="addressNew"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href= "index.html"><button>Go back</button> </a>
+            </td>
+        </tr>
+                </table>
+</div> 
+        <!-- Q2 -->
+
+        <div>
+            <p id="slowLoris">
+                Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+                <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+            </p>
+            
+        </div>
+        
+<!-- Q3  -->
+<table>
+    <tr>
+        <td><b>INDEX</b></td>
+        <td><b>NAME</b></td>
+        <td><b>CLASS</b></td>
+    </tr>
+    <tr id = "0">
+        <td>0</td>
+    <td>Alex</td>
+    <td>08</td>
+    <td><button onclick="deleteRow(0);">Delete</button></td>
+    <td><button onclick="edit(0);">Edit</button></td>
+
+</tr>
+    <tr id = "1">
+        <td>1</td>
+        <td>Obama</td>
+        <td>06</td>
+        <td><button onclick="deleteRow(1);">Delete</button></td>
+        <td><button onclick="edit(1);">Edit</button></td>
+    
+    </tr>
+    <tr id = "2">
+        <td>2</td>
+        <td>Hennry</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(2);">Delete</button></td>
+        <td><button onclick="edit(2);">Edit</button></td>
+    
+    </tr>
+    <tr id = "3">
+        <td>3</td>
+        <td>Ray</td>
+        <td>04</td>
+        <td><button onclick="deleteRow(3);">Delete</button></td>
+        <td><button onclick="edit(3);">Edit</button></td>
+        
+    </tr>
+<tr id = "editField" class= "hidden">
+    <td></td>
+    <td><input type="text" ></td>
+    <td><input type="text" ></td>
+    <td><button onclick ="save(saveId);">Save</button></td>
+    <td><button onclick="cancel();" >Cancel</button></td>
+</tr>
+
+</table> 
+
+
+
+
+</body>
+</html>

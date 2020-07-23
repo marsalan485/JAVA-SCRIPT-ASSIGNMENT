@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-14-16</title>
+</head>
+
+<body>
+    
+    
+    <script>
+        document.write("<h3> Task 1 </h3>")
+        document.write(" StdNames=[];");
+        StdNames = [];
+
+    </script>
+
+    
+    <script>
+        document.write("<h3> Task 2 </h3>")
+        document.write(" StdNames=();");
+
+    </script>
+
+   
+    <script>
+        document.write("<h3> Task 3 </h3>")
+        document.write('StringArray=["Doll","Cat","Meat"]')
+        StringArray = ["Doll", "Cat", "Meat"]
+
+    </script>
+
+
+
+
+    <script>
+        document.write("<h3> Task 4 </h3>")
+        document.write("NumberArray=[12,56,76]");
+        NumberArray = [12, 56, 76]
+
+    </script>
+
+
+   
+    <script>
+         document.write("<h3> Task 5 </h3>")
+        document.write(" BooleanArray=[true,false];");
+        var BooleanArray = [true, false];
+
+    </script>
+
+    
+    <script>
+         document.write("<h3> Task 6 </h3>")
+        document.write('MixedArray=[true,false,"Doll","Cat","Meat",12,56,76];')
+        var MixedArray = [true, false, "Doll", "Cat", "Meat", 12, 56, 76];
+
+    </script>
+   
+    <script>
+        document.write("<h3> Task 7 </h3>")
+        EduQuali = ['SSC', 'HSC', "BCS", "BS", "BCOM", "MS", "M.Phil", "PhD"];
+    </script>
+    <ol type="1">
+        <h1>Qualifications</h1>
+        <li>
+            <Script>document.write(EduQuali[0] + "<br>")</Script>
+        </li>
+        <li>
+            <Script>document.write(EduQuali[1] + "<br>")</Script>
+        </li>
+        <li>
+            <Script>document.write(EduQuali[2] + "<br>")</Script>
+        </li>
+        <li>
+            <Script>document.write(EduQuali[3] + "<br>")</Script>
+        </li>
+        <li>
+            <Script>document.write(EduQuali[4] + "<br>")</Script>
+        </li>
+        <li>
+            <Script>document.write(EduQuali[5] + "<br>")</Script>
+        </li>
+        <li>
+            <Script>document.write(EduQuali[6] + "<br>")</Script>
+        </li>
+        <li>
+            <Script>document.write(EduQuali[7] + "<br>")</Script>
+        </li>
+
+    </ol>
+
+
+  
+    
+
+    <script>
+         document.write("<h3> Task 8 </h3>")
+        var names = ["Abdullah", 'Tahir', "Aaamir"];
+        var Score = [300, 400, 270];
+
+
+
+
+        document.write("Score of " + names[0] + " is " + String(Score[0]) + " Percentage is : " + (Score[0] / 500 * 100) + "%")
+        document.write("<br>")
+        document.write("Score of " + names[1] + " is " + String(Score[1]) + " Percentage is : " + (Score[1] / 500 * 100) + "%")
+        document.write("<br>")
+        document.write("Score of " + names[2] + " is " + String(Score[2]) + " Percentage is : " + (Score[2] / 500 * 100) + "%")
+
+    </script>
+
+
+
+
+    <b>
+        <p>
+            Q9 : Initialize an array with color names. Display the array
+            elements in your browser.
+        </p>
+    </b>
+
+
+    <b>
+        <p>
+            a) : Ask the user what color he/she wants to add to the
+            beginning & add that color to the beginning of the array.
+            Display the updated array in your browser
+        </p>
+    </b>
+    <script>
+
+        colorName = [];
+        Color = prompt("Enter a Color : ")
+
+        colorName.unshift(Color);
+        document.write(colorName)
+
+
+
+
+    </script>
+
+    <b>
+        <p>
+            b) Ask the user what color he/she wants to add to the end
+            & add that color to the end of the array. Display the
+            updated array in your browser
+        </p>
+    </b>
+
+    <script>
+        Color = prompt("Enter a Color : ")
+
+        colorName.push(Color);
+        document.write(colorName)
+
+
+
+
+    </script>
+
+
+    </script>
+
+    <b>
+        <p>
+            c) Add two more color to the beginning of the array.
+            Display the updated array in your browser
+        </p>
+    </b>
+    <script>
+        Color1 = prompt("Enter a Color : ")
+        Color2 = prompt("Enter a Color : ")
+
+        colorName.unshift(Color1);
+        colorName.unshift(Color2);
+        document.write(colorName)
+
+    </script>
+
+
+    <b>
+        <p>
+            d)Delete the first color in the array. Display the updated
+            array in your browser
+        </p>
+    </b>
+    <script>
+        colorName.shift();
+        document.write(colorName);
+
+    </script>
+
+    <b>
+        <p>
+            e) Delete the last color in the array. Display the updated
+            array in your browser.
+        </p>
+    </b>
+    <script>
+        colorName.pop();
+        document.write(colorName);
+
+    </script>
+
+    <b>
+s        <p>
+            f) Ask the user at which index he/she wants to add a color
+            & color name. Then add the color to desired
+            position/index. . Display the updated array in your
+            browser.
+        </p>
+    </b>
+    <script>
+        index = +prompt("Enter a Location  : ")
+        colorname = prompt("Enter a color name")
+
+        colorName.splice(index, 0, colorname);
+        document.write(colorName)
+
+
+    </script>
+
+    <b>
+        <p>
+            Ask the user at which index he/she wants to delete
+            color(s) & how many colors he/she wants to delete. Then
+            remove the same number of color(s) from user-defined
+            position/index. . Display the updated array in your
+            browser.
+        </p>
+    </b>
+    <script>
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+  
+    <script>
+        document.write("<h3> Task 10 </h3>")
+        StudentScore = [320, 230, 480, 120];
+
+        StudentScore.sort();
+        document.write(StudentScore)
+
+
+
+
+    </script>
+
+
+    <script>
+         document.write("<h3> Task 11 </h3>")
+        CityNames = ["karachi", "Lahore", "Islamabad", "Queeta", "Peshawar"];
+
+        var selectedCities = CityNames.splice(2, 2);
+
+        document.write(selectedCities)
+
+
+
+
+
+    </script>
+
+
+
+    <script>
+        document.write("<h3> Task 12 </h3>")
+
+        var arr = ["This", "is", "my", "cat"]
+
+        document.write(arr)
+
+        arr.join();
+        document.write(arr)
+
+    </script>
+
+
+
+
+    <script>
+          document.write("<h3> Task 13 </h3>")
+
+        var arr = ["Keyboard", "Mouse", "Printer", "Monitor"]
+
+        document.write("Deveices: " + arr + "<br>")
+
+        a = arr.shift(0);
+        document.write("out : " + "<br>" + a + "<br>");
+
+        b = arr.shift(1);
+
+        document.write("out : " + "<br>" + b + "<br>");
+
+        c = arr.shift(2);
+        document.write("out : " + "<br>" + c + "<br>");
+
+
+        d = arr.shift(3);
+        document.write("out : " + "<br>" + d + "<br>")
+
+
+    </script>
+
+
+    <script>
+        document.write("<h3> Task 14 </h3>")
+
+        var arr = ["Keyboard", "Mouse", "Printer", "Monitor"]
+
+        document.write("Deveices: " + arr + "<br>")
+
+        a = arr.pop(0);
+        document.write("out : " + "<br>" + a + "<br>");
+
+        b = arr.pop(1);
+
+        document.write("out : " + "<br>" + b + "<br>");
+
+        c = arr.pop(2);
+        document.write("out : " + "<br>" + c + "<br>");
+
+
+        d = arr.pop(3);
+        document.write("out : " + "<br>" + d + "<br>")
+
+
+    </script>
+
+
+   
+    <script>
+        document.write("<h3> Task 15 </h3>")
+
+        Mobiles=["Apple","Samsung","Motorola","Nokia","Sony","Haier"]
+
+        document.write(Mobiles[0] + "<br>")
+        document.write(Mobiles[1] + "<br>")
+        document.write(Mobiles[2] + "<br>")
+        document.write(Mobiles[3] + "<br>")
+        document.write(Mobiles[4] + "<br>")
+        document.write(Mobiles[5] + "<br>")
+        
+    </script>
+
+
+</body>
+
+</html>
